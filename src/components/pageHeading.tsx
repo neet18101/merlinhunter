@@ -11,7 +11,7 @@ const PageHeading = ({
 }) => {
    return (
       <Container
-         background="bg-[#F1f1f1]"
+         background="bg-[#fff]"
          className=" py-[50px] animate__animated animate__fadeIn"
       >
          <h1

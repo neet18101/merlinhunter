@@ -16,7 +16,7 @@ const ContactUs = () => {
                >
                   Contact Us
                </span>
-               <div>
+               {/* <div>
                   <h1
                      className=" text-[2rem] md:text-[2.8rem] font-bold inline-block "
                      data-aos="fade-right"
@@ -25,7 +25,7 @@ const ContactUs = () => {
                      New Case
                      <span className="block h-[5px] mt-[-8px] bg-orange-600"></span>
                   </h1>
-               </div>
+               </div> */}
             </div>
 
             <div
