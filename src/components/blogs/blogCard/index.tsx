@@ -42,8 +42,10 @@ export const BlogCard = ({ post, dataAos, dataAosDelay, minDescriptionLength = 1
 
          <div className="flex">
             <p className="text-[14px] justify-start text-gray-400 font-lato ">
-               {JSON.stringify(post && post?.publishedAt)}
-               {/* {DateFns.format(post.publishedAt, "dd MMM yyyy")} */}
+               {/* {JSON.stringify(post && post?.publishedAt)} */}
+               {post && post?.publishedAt ? DateFns.format(post?.publishedAt, "dd MMM yyyy") : ""}
+              
+               {/* {DateFns.format(post?.publishedAt, "dd MMM yyyy")} */}
             </p>
          </div>
       </div>

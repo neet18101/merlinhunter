@@ -4,7 +4,7 @@ const ContactUs = () => {
    return (
       <section className="pb-[50px] md:pb-[100px]">
          <div
-            className="grid  lg:grid-cols-3 gap-[20px] bg-[#FAFAFA] rounded-[10px] border border-[#D8D8D8] py-[40px] md:py-[80px] px-[30px] md:px-[60px] "
+            className="grid  lg:grid-cols-3 gap-[20px] bg-[#fff] rounded-[10px] border border-[#D8D8D8] py-[40px] md:py-[80px] px-[30px] md:px-[60px] "
             // data-aos="fade-down"
             // data-aos-duration="100"
          >
