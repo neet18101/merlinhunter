@@ -3,17 +3,16 @@ import { client } from "../utils/sanity";
 
 export const getAllPosts = async (
    page: number = 1,
-   pageSize: number = 15,
+   pageSize: number = 12,
    query?: string
 ): Promise<{ posts: TPostRepository[]; totalCount: number }> => {
    try {
       const start = (page - 1) * pageSize;
-      const end = start + pageSize - 1;
-
+      const end = start + pageSize;
       // Query for paginated posts
       const paginatedQuery = query
          ? query
-         : `*[_type == 'post'] | order(publishedAt desc) [${start}...${end}] {
+         : `*[_type == 'post'] | order(_createdAt desc) [${start}...${end}] {
            _id,
            title,
            subtitle,
@@ -26,15 +25,14 @@ export const getAllPosts = async (
            description,
            publishedAt
         }`;
-
       // Query for total count
       const totalCountQuery = `count(*[_type == 'post'])`;
-
       // Execute both queries in parallel
       const [posts, totalCount] = await Promise.all([
          client.fetch<TPostRepository[]>(paginatedQuery),
          client.fetch<number>(totalCountQuery),
       ]);
+      // console.log(posts,"neet")
 
       return { posts, totalCount };
    } catch (error) {
