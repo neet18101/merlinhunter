@@ -33,6 +33,7 @@
          const getCurrentBlogs = () => {
             const indexOfLastBlog = currentPage * pageSize;
             const indexOfFirstBlog = indexOfLastBlog - pageSize;
+            // console.log(indexOfFirstBlog, indexOfLastBlog , "navneet");
             return allPosts
          };
 
