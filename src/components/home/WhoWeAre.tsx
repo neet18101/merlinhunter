@@ -4,17 +4,6 @@ const WhoWeAre = () => {
    return (
       <div className="py-[50px] md:py-[100px] font-sans">
          <div className="grid lg:grid-cols-2 gap-[20px]">
-            <div data-aos="fade-right">
-               {/* <span className="text-[14px] text-[#595959] uppercase tracking-widest">
-                  Who We Are
-               </span> */}
-               <h1 className="text-[2rem] md:text-[2.8rem] font-bold max-w-[550px] leading-[46px] tracking-wide mb-[10px] font-roboto">
-                  Shining light on the dark
-               </h1>
-               {/* <button className="py-[12px] px-[30px] text-white bg-orange-600 rounded-full flex items-center gap-[10px]">
-                  Learn More <RightArrowIcon width={16} height={16} />
-               </button> */}
-            </div>
 
             {/* Left section */}
             <div
@@ -44,7 +33,7 @@ const WhoWeAre = () => {
                   ethical and professional investigators and intelligence
                   experts that have comprehensive experience in dealing with
                   complex civil and arbitrary cases for high net worth
-                  individuals, businesses and law firms worldwide.”
+                  individuals, businesses and law firms worldwide.
                </p>
             </div>
          </div>
