@@ -19,6 +19,9 @@ export default function RootLayout({
 }: {
    children: React.ReactNode;
 }) {
+   if (typeof document !== 'undefined') {
+      // Code that accesses document
+    }
    return (
       <html lang="en" suppressHydrationWarning>
          <body className={inter.className}>

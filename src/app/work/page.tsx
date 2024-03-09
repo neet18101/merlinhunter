@@ -7,6 +7,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = pageTitle.work;
 
 const WorkPage = () => {
+   if (typeof document !== 'undefined') {
+      // Code that accesses document
+    }
    return (
       <div>
          <PageHeading>Process</PageHeading>

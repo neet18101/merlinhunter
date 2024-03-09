@@ -6,12 +6,15 @@ import {
 } from "@/components/icons";
 import { ContactCard, NewCaseForm } from "@/components/new-case";
 import { Metadata } from "next";
-import Container from "@/components/container";
+// import Container from "@/components/container";
 import PageHeading from "@/components/pageHeading";
 
 export const metadata: Metadata = pageTitle.newCase;
 
 const NewCasePage = async () => {
+   if (typeof document !== 'undefined') {
+      // Code that accesses document
+    }
    return (
       <section>
          {/* Heading */}

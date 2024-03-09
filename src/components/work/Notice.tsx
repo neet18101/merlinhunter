@@ -1,12 +1,12 @@
 "use client";
-import Container from "@/components/container";
+// import Container from "@/components/container";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from "@/common/assets/notice.json";
 import { ReactNode, useRef } from "react";
 import Link from "next/link";
 import { CallIcon } from "../icons";
 import clsx from "clsx";
-import { Icon } from "@iconify/react/dist/iconify.js";
+// import { Icon } from "@iconify/react/dist/iconify.js";
 import { twMerge } from "tailwind-merge";
 
 const Notice = () => {

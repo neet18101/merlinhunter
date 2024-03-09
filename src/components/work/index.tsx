@@ -1,12 +1,12 @@
 "use client";
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import { AnimatePresence, motion } from "framer-motion";
-import MinusIcon from "@/components/icons/Minus";
-import PlusIcon from "@/components/icons/Plus";
+// import { AnimatePresence, motion } from "framer-motion";
+// import MinusIcon from "@/components/icons/Minus";
+// import PlusIcon from "@/components/icons/Plus";
 import "./style.css";
-import Image from "next/image";
-import clsx from "clsx";
+// import Image from "next/image";
+// import clsx from "clsx";
 import Notice from "./Notice";
 
 const data = [
