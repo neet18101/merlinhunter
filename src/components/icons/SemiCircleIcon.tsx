@@ -29,17 +29,22 @@ const SemiCircleIcon = ({
          isPostionRight
             ? `rotate(${(-scrollY / window.innerWidth) * 360}deg)`
             : window.scrollY === 0
-            ? `rotate(${rotate}deg)`
-            : `rotate(-${(scrollY / window.innerWidth) * 360}deg)`
+               ? `rotate(${rotate}deg)`
+               : `rotate(-${(scrollY / window.innerWidth) * 360}deg)`
       );
    };
 
    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-         window.removeEventListener("scroll", handleScroll);
-      };
+      // Check if window is available (running in the browser)
+      if (typeof window !== 'undefined') {
+         window.addEventListener("scroll", handleScroll);
+         // Clean up the event listener when the component unmounts
+         return () => {
+            window.removeEventListener("scroll", handleScroll);
+         };
+      }
    }, [rotation]);
+
 
    const translate = isPostionRight
       ? `translate(${scrollX}px, ${-scrollY}px)`

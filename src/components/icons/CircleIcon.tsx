@@ -33,11 +33,16 @@ const CircleIcon = ({
       );
    };
    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-         window.removeEventListener("scroll", handleScroll);
-      };
+      // Check if window is available (running in the browser)
+      if (typeof window !== 'undefined') {
+         window.addEventListener("scroll", handleScroll);
+         // Clean up the event listener when the component unmounts
+         return () => {
+            window.removeEventListener("scroll", handleScroll);
+         };
+      }
    }, [rotation]);
+
 
    const translate = isPostionRight
       ? `translate(${scrollX}px, ${-scrollY}px)`

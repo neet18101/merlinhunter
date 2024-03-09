@@ -23,7 +23,7 @@ const HomePage = async () => {
       <div className="min-h-[90vh]  bg-[#F3F3F3]">
          {/* <h1>hello</h1> */}
          <HomeBanner />
-         {/* <NewHomeBanner /> */}
+         <NewHomeBanner />
          <Container>
             <WhoWeAre />
             <OurServices /> 
