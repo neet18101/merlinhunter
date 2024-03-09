@@ -89,14 +89,14 @@ const Card = ({ children, className }: IProps) => {
    return (
       <div className=" bg-white px-[20px] py-[30px] rounded-sm md:rounded-lg ">
          <div className=" w-[100px] mx-auto relative  z-0 ">
-            <Lottie
+            {/* <Lottie
                onComplete={() => {
                   noticeRef.current?.goToAndPlay(5, true);
                }}
                animationData={animationData}
                lottieRef={noticeRef}
                loop={false}
-            />
+            /> */}
          </div>
          <div
             className={twMerge(
