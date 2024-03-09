@@ -11,10 +11,10 @@ import {
 } from "@/components/home";
 import { Metadata } from "next";
 import pageTitle from "@/common/utils/page-title";
-// import { getAllPosts } from "@/common/apis/post.api";
+import { getAllPosts } from "@/common/apis/post.api";
 import NewTimeLine from "@/components/home/NewTimeline";
 
-// export const metadata: Metadata = pageTitle.home;
+export const metadata: Metadata = pageTitle.home;
 
 const HomePage = async () => {
    // const { posts } = await getAllPosts(1, 10);
@@ -23,20 +23,20 @@ const HomePage = async () => {
       <div className="min-h-[90vh]  bg-[#F3F3F3]">
          {/* <h1>hello</h1> */}
          <HomeBanner />
-         <NewHomeBanner />
-         {/*<Container>
+         {/* <NewHomeBanner /> */}
+         <Container>
             <WhoWeAre />
-            <OurServices /> */}
-         {/* <HowWeWorkTimeline /> */}
-         {/* <NewTimeLine />
-         </Container> */}
+            <OurServices /> 
+         <HowWeWorkTimeline />
+          <NewTimeLine />
+         </Container> 
 
          <div className="bg-[#F6F6F6]">
-            {/* <Container>
+            <Container>
                <ContactUs />
                <FromOurBlog posts={posts} />
             </Container>
-            <Sponsors /> */}
+            <Sponsors /> 
          </div>
       </div>
    );
