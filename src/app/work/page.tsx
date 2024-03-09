@@ -1,3 +1,4 @@
+"use client";
 import { useEffect } from 'react'; // Import useEffect hook
 import pageTitle from "@/common/utils/page-title";
 import PageHeading from "@/components/pageHeading";
