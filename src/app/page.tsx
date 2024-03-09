@@ -21,14 +21,14 @@ const HomePage = async () => {
 
    return (
       <div className="min-h-[90vh]  bg-[#F3F3F3]">
-         <h1>hello</h1>
-         {/* <HomeBanner /> */}
-         {/* <NewHomeBanner />
-         <Container>
+         {/* <h1>hello</h1> */}
+         <HomeBanner />
+         <NewHomeBanner />
+         {/*<Container>
             <WhoWeAre />
             <OurServices /> */}
-            {/* <HowWeWorkTimeline /> */}
-            {/* <NewTimeLine />
+         {/* <HowWeWorkTimeline /> */}
+         {/* <NewTimeLine />
          </Container> */}
 
          <div className="bg-[#F6F6F6]">
