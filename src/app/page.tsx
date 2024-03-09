@@ -17,7 +17,7 @@ import NewTimeLine from "@/components/home/NewTimeline";
 export const metadata: Metadata = pageTitle.home;
 
 const HomePage = async () => {
-   // const { posts } = await getAllPosts(1, 10);
+   const { posts } = await getAllPosts(1, 10);
 
    return (
       <div className="min-h-[90vh]  bg-[#F3F3F3]">
