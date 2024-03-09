@@ -14,7 +14,7 @@ import pageTitle from "@/common/utils/page-title";
 import { getAllPosts } from "@/common/apis/post.api";
 import NewTimeLine from "@/components/home/NewTimeline";
 
-export const metadata: Metadata = pageTitle.home;
+// export const metadata: Metadata = pageTitle.home;
 
 const HomePage = async () => {
    const { posts } = await getAllPosts(1, 10);

@@ -9,12 +9,12 @@ import { useEffect } from "react";
 // export const metadata: Metadata = pageTitle.work;
 
 const WorkPage = () => {
-   useEffect(() => {
-      if (typeof window !== 'undefined') {
-        // Code that relies on document object (only runs in the browser)
-        document.title = "My Dynamic Title";
-      }
-    }, []);
+   // useEffect(() => {
+   //    if (typeof window !== 'undefined') {
+   //      // Code that relies on document object (only runs in the browser)
+   //      document.title = "My Dynamic Title";
+   //    }
+   //  }, []);
    return (
       <div>
          <PageHeading>Process</PageHeading>
