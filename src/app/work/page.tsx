@@ -6,7 +6,7 @@ import Notice from "@/components/work/Notice";
 import { Metadata } from "next";
 import { useEffect } from "react";
 
-export const metadata: Metadata = pageTitle.work;
+// export const metadata: Metadata = pageTitle.work;
 
 const WorkPage = () => {
    useEffect(() => {
