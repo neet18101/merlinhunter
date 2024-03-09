@@ -3,7 +3,7 @@ import { RightArrowIcon } from "../icons";
 const WhoWeAre = () => {
    return (
       <div className="py-[50px] md:py-[100px] font-sans">
-         <div className="grid lg:grid-cols-2 gap-[20px]">
+         <div className="grid lg:grid-cols-1 gap-[20px]">
 
             {/* Left section */}
             <div
