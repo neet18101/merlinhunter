@@ -171,11 +171,11 @@ const Footer = () => {
             | Website developed by
             <Link
               target="blank"
-              href="https://bytescrum.com"
+              href="https://merlinhunter.com"
               className="greenlink hover:underline underline-offset-[5px] text-orange-600 font-roboto"
             >
               {" "}
-              ByteScrum Team
+              Merlinhunter.com
             </Link>
           </div>
           <div className="flex gap-[15px]">
