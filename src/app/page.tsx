@@ -18,7 +18,7 @@ export const metadata: Metadata = pageTitle.home;
 
 const HomePage = async () => {
    const { posts } = await getAllPosts(1, 10);
-   console.log(posts)
+   // console.log(posts)
 
    return (
       <div className="min-h-[90vh]  bg-[#F3F3F3]">
