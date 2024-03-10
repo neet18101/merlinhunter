@@ -14,6 +14,7 @@ type Props = {
 };
 
 const FromOurBlog = ({ posts }: Props) => {
+// console.log(posts)
    return (
       <section className="pb-[50px] md:pb-[100px]">
          <h1
