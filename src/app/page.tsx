@@ -27,17 +27,17 @@ const HomePage = async () => {
          <NewHomeBanner />
          <Container>
             <WhoWeAre />
-            <OurServices /> 
-         <HowWeWorkTimeline />
-          <NewTimeLine />
-         </Container> 
+            <OurServices />
+            {/* <HowWeWorkTimeline /> */}
+            <NewTimeLine />
+         </Container>
 
          <div className="bg-[#F6F6F6]">
             <Container>
                <ContactUs />
                <FromOurBlog posts={posts} />
             </Container>
-            <Sponsors /> 
+            <Sponsors />
          </div>
       </div>
    );
