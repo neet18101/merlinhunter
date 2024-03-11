@@ -281,7 +281,7 @@ const NewHomeBanner = () => {
                />
             </div>
          </Container>
-         <Lottie
+         {/* <Lottie
             onComplete={() => {
                frameRef.current?.goToAndPlay(5, true);
             }}
@@ -289,7 +289,7 @@ const NewHomeBanner = () => {
             lottieRef={frameRef}
             loop={false}
             className="animate__animated md:hidden animate__bounceInDown absolute bottom-0 "
-         />
+         /> */}
          {/* <div className=" md:hidden  bottom-[0px] sm:bottom-0 z-0   border-black">
           
          </div> */}
