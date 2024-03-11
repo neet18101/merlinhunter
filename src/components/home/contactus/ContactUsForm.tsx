@@ -60,12 +60,14 @@ const ContactUsForm = () => {
                      setFormData({ ...formData, firstName: e.target.value })
                   }
                   placeholder="First Name"
+                  required
                   className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                />
                <input
                   id="lastName"
                   type="text"
                   value={formData.lastName}
+               
                   onChange={(e) =>
                      setFormData({ ...formData, lastName: e.target.value })
                   }
@@ -76,6 +78,7 @@ const ContactUsForm = () => {
                   id="email"
                   type="email"
                   value={formData.email}
+                  required
                   onChange={(e) =>
                      setFormData({ ...formData, email: e.target.value })
                   }
@@ -87,6 +90,7 @@ const ContactUsForm = () => {
                   id="phone"
                   type="tel"
                   value={formData.phone}
+                  required
                   onChange={(e) =>
                      setFormData({ ...formData, phone: e.target.value })
                   }
