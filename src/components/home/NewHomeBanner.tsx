@@ -8,13 +8,15 @@ import {
 } from "../icons";
 import "./style.css";
 import Container from "@/components/container";
-import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import Lottie from 'lottie-react';
+
+// import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from "@/common/assets/frame-6.json";
 import { useRef } from "react";
 import Link from "next/link";
 
 const NewHomeBanner = () => {
-   const frameRef = useRef<LottieRefCurrentProps>(null);
+   const frameRef = useRef(null);
 
    return (
       <div className="bg-white  relative pb-[60px] ">
