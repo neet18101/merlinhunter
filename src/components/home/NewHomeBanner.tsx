@@ -8,9 +8,12 @@ import {
 } from "../icons";
 import "./style.css";
 import Container from "@/components/container";
-// import Lottie from 'lottie-react';
+import Lottie , { LottieRefCurrentProps } from 'lottie-react';
 
-import Lottie, { LottieRefCurrentProps } from "lottie-react";
+
+// import dynamic from 'next/dynamic';
+
+
 import animationData from "@/common/assets/frame-6.json";
 import { useRef } from "react";
 import Link from "next/link";
@@ -281,7 +284,7 @@ const NewHomeBanner = () => {
                />
             </div>
          </Container>
-         {/* <Lottie
+         <Lottie
             onComplete={() => {
                frameRef.current?.goToAndPlay(5, true);
             }}
@@ -289,7 +292,7 @@ const NewHomeBanner = () => {
             lottieRef={frameRef}
             loop={false}
             className="animate__animated md:hidden animate__bounceInDown absolute bottom-0 "
-         /> */}
+         />
          {/* <div className=" md:hidden  bottom-[0px] sm:bottom-0 z-0   border-black">
           
          </div> */}
