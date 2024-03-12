@@ -8,18 +8,21 @@ import {
 } from "../icons";
 import "./style.css";
 import Container from "@/components/container";
-import Lottie , { LottieRefCurrentProps } from 'lottie-react';
+import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 
 
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 
 
 import animationData from "@/common/assets/frame-6.json";
 import { useRef } from "react";
 import Link from "next/link";
 
+
 const NewHomeBanner = () => {
+   const isBrowser = typeof window !== "undefined";
    const frameRef = useRef<LottieRefCurrentProps>(null);
+
 
    return (
       <div className="bg-white  relative pb-[60px] ">
@@ -284,15 +287,19 @@ const NewHomeBanner = () => {
                />
             </div>
          </Container>
-         <Lottie
-            onComplete={() => {
-               frameRef.current?.goToAndPlay(5, true);
-            }}
-            animationData={animationData}
-            lottieRef={frameRef}
-            loop={false}
-            className="animate__animated md:hidden animate__bounceInDown absolute bottom-0 "
-         />
+         {isBrowser && (
+            <Lottie
+               onComplete={() => {
+                  frameRef.current?.goToAndPlay(5, true);
+               }}
+               animationData={animationData}
+               lottieRef={frameRef}
+               loop={false}
+               className="animate__animated md:hidden animate__bounceInDown absolute bottom-0 "
+            />
+
+         )}
+
          {/* <div className=" md:hidden  bottom-[0px] sm:bottom-0 z-0   border-black">
           
          </div> */}
