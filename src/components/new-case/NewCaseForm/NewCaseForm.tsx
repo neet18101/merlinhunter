@@ -138,42 +138,7 @@ const NewCaseForm = () => {
                   className="bg-transparent col-span-2  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                /> */}
                             </div>
-                            <div
-                                className="flex flex-col ps-[10px] gap-[20px]"
-                                data-aos="fade-up"
-                                data-aos-duration="3000"
-                            >
-                                <label htmlFor="question" className="py-[12px] text-zinc-850r">
-                                    {/* In Which Service You Have Questions? */}
-                                    What best describes your situation?”
-                                </label>
-                                <div className="grid md:grid-cols-2 gap-[10px] px[10px]">
-                                    <Checkbox
-                                        title="Missing Person"
-                                        isChecked={formData.question.includes("Missing Person")}
-                                        onChange={() => handleCheckboxChange("Missing Person")}
-                                    />
-                                    <Checkbox
-                                        title="Civil Disputes"
-                                        isChecked={formData.question.includes("Civil Disputes")}
-                                        onChange={() => handleCheckboxChange("Civil Disputes")}
-                                    />
-                                    <Checkbox
-                                        title="Fraud Detection and Misconduct"
-                                        isChecked={formData.question.includes(
-                                            "Fraud Detection and Misconduct"
-                                        )}
-                                        onChange={() =>
-                                            handleCheckboxChange("Fraud Detection and Misconduct")
-                                        }
-                                    />
-                                    <Checkbox
-                                        title="Other"
-                                        isChecked={formData.question.includes("Other")}
-                                        onChange={() => handleCheckboxChange("Other")}
-                                    />
-                                </div>
-                            </div>
+                            
                             <div>
                                 <input
                                     id="message"
