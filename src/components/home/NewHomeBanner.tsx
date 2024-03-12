@@ -9,11 +9,6 @@ import {
 import "./style.css";
 import Container from "@/components/container";
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
-
-
-import dynamic from 'next/dynamic';
-
-
 import animationData from "@/common/assets/frame-6.json";
 import { useRef } from "react";
 import Link from "next/link";
@@ -22,8 +17,6 @@ import Link from "next/link";
 const NewHomeBanner = () => {
    const isBrowser = typeof window !== "undefined";
    const frameRef = useRef<LottieRefCurrentProps>(null);
-
-
    return (
       <div className="bg-white  relative pb-[60px] ">
          <Container background=" relative pt-6 pb-12  z-10 ">
