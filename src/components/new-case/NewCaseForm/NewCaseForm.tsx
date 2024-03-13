@@ -88,10 +88,10 @@ const NewCaseForm = () => {
                                     onChange={(e) =>
                                         setFormData({ ...formData, firstName: e.target.value })
                                     }
-                                    placeholder="First Name"
+                                    placeholder="Full Name"
                                     className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                                 />
-                                <input
+                                {/* <input
                                     id="lastName"
                                     type="text"
                                     value={formData.lastName}
@@ -100,7 +100,7 @@ const NewCaseForm = () => {
                                     }
                                     placeholder="Last Name"
                                     className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
-                                />
+                                /> */}
                                 <input
                                     id="email"
                                     type="email"
@@ -138,11 +138,11 @@ const NewCaseForm = () => {
                   className="bg-transparent col-span-2  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                /> */}
                             </div>
-                            
+
                             <div>
                                 <input
                                     id="message"
-                                    type="tel"
+                                    type="text"
                                     onChange={(e) =>
                                         setFormData({ ...formData, message: e.target.value })
                                     }

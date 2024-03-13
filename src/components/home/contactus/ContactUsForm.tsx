@@ -52,6 +52,9 @@ const ContactUsForm = () => {
       <div className="flex flex-col gap-[40px]  ">
          <form className="grid gap-[20px]" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-[10px]">
+               <div className="absolute grid w-5 h-5 place-items-center text-blue-gray-500 top-2/4 right-3 -translate-y-2/4">
+                  <i className="fas fa-heart" aria-hidden="true" />
+               </div>   
                <input
                   id="firstName"
                   type="text"
@@ -59,11 +62,11 @@ const ContactUsForm = () => {
                   onChange={(e) =>
                      setFormData({ ...formData, firstName: e.target.value })
                   }
-                  placeholder="First Name"
+                  placeholder="Full Name"
                   required
                   className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                />
-               <input
+               {/* <input
                   id="lastName"
                   type="text"
                   value={formData.lastName}
@@ -73,6 +76,18 @@ const ContactUsForm = () => {
                   }
                   placeholder="Last Name"
                   className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
+               /> */}
+               <input
+                  id="phone"
+                  type="tel"
+                  value={formData.phone}
+                  required
+                  onChange={(e) =>
+                     setFormData({ ...formData, phone: e.target.value })
+                  }
+                  placeholder="Phone"
+                  name="phone"
+                  className="bg-transparent   w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                />
                <input
                   id="email"
@@ -84,20 +99,9 @@ const ContactUsForm = () => {
                   }
                   placeholder="Email"
                   name="email"
-                  className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
+                  className="bg-transparent col-span-2  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                />{" "}
-               <input
-                  id="phone"
-                  type="tel"
-                  value={formData.phone}
-                  required
-                  onChange={(e) =>
-                     setFormData({ ...formData, phone: e.target.value })
-                  }
-                  placeholder="Phone"
-                  name="phone"
-                  className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
-               />
+
                {/* <input
                   id="alternatePhone"
                   type="tel"
@@ -152,7 +156,7 @@ const ContactUsForm = () => {
             <div>
                <input
                   id="message"
-                  type="tel"
+                  type="text"
                   onChange={(e) =>
                      setFormData({ ...formData, message: e.target.value })
                   }
