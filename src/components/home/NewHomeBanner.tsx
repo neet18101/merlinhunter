@@ -280,19 +280,19 @@ const NewHomeBanner = () => {
                />
             </div>
          </Container>
-         {isBrowser && (
+         {/* {isBrowser && (
             
             <Lottie
-               // onComplete={() => {
-               //    frameRef.current?.goToAndPlay(5, true);
-               // }}
+                onComplete={() => {
+                   frameRef.current?.goToAndPlay(5, true);
+               }}
                animationData={animationData}
-               // lottieRef={frameRef}
-               // loop={false}
-               className="animate__animated md:hidden animate__bounceInDown absolute bottom-0 "
+                lottieRef={frameRef}
+                loop={false}
+             className="animate__animated md:hidden animate__bounceInDown absolute bottom-0 "
             />
 
-         )}
+         )} */}
 
          {/* <div className=" md:hidden  bottom-[0px] sm:bottom-0 z-0   border-black">
           
