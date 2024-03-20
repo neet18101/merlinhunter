@@ -41,7 +41,7 @@ const BlogDetails = async (context: any) => {
             <h3 className=" text-black justify-start font-poppins text-[35px] font-bold leading-normal">
                {post?.title}
             </h3>
-            <div className="flex flex-row ">
+            {/* <div className="flex flex-row ">
                <div className="w-3/12 flex">
                   <div>
                      <p className="text-[16px] text-orange-650">
@@ -72,7 +72,7 @@ const BlogDetails = async (context: any) => {
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
 
             <div className="py-[20px]">
                <Image
