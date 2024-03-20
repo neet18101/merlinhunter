@@ -6,7 +6,8 @@ import Link from 'next/link';
 
 function page() {
   return (
-    <> <Script
+    <> 
+    <Script
       id="google-conversion-tracking"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
