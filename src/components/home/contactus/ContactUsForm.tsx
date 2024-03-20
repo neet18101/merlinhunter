@@ -6,8 +6,10 @@ import { Checkbox } from "@/components/inputs";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const ContactUsForm = () => {
+   const router = useRouter();
    const [isChecked, setIsChecked] = useState<boolean>(false);
    const [isLoading, setIsLoading] = useState(false); // Step 2
 
@@ -33,7 +35,7 @@ const ContactUsForm = () => {
       e.preventDefault();
       try {
          const response = await axios.post("/api/contactus", formData);
-         console.log(response.data);
+         console.log(response.status);
          setIsLoading(false);
          setFormData({
             firstName: "",
@@ -44,17 +46,20 @@ const ContactUsForm = () => {
             question: [] as string[],
             message: "",
          });
+         if (response.status === 200) {
+            router.push("/thankyou")
+         }
       } catch (error) {
          console.log(error);
       }
    };
-   return (
+   return ( 
       <div className="flex flex-col gap-[40px]  ">
          <form className="grid gap-[20px]" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-[10px]">
                <div className="absolute grid w-5 h-5 place-items-center text-blue-gray-500 top-2/4 right-3 -translate-y-2/4">
                   <i className="fas fa-heart" aria-hidden="true" />
-               </div>   
+               </div>
                <input
                   id="firstName"
                   type="text"

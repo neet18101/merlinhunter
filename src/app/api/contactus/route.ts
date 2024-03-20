@@ -33,7 +33,7 @@ export async function POST(request: Request) {
             _type: "contactus",
             ...json,
          });
-         return new NextResponse();
+         return new NextResponse("Success", { status: 200 });
       } catch (error) {
          return new NextResponse("Internal Server Error", { status: 500 });
       }
