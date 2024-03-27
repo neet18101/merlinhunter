@@ -32,6 +32,7 @@ export default function RootLayout({
                <Providers>
                   <Header />
                   <Navbar />
+                  
                   {children}
                   <Footer />
                   <AosInit />

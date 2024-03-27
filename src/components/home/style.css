@@ -1,15 +1,35 @@
 .reflectionTringle {
-   -webkit-box-reflect: below 0px
-      linear-gradient(to top, #0c6c6c2c, transparent 10%);
+  -webkit-box-reflect: below 0px
+    linear-gradient(to top, #0c6c6c2c, transparent 10%);
 }
 
 .rectangleReflection {
-   -webkit-box-reflect: below 0px
-      linear-gradient(to top, #00333330, transparent 20%);
-   /* rotate: 35deg; */
+  -webkit-box-reflect: below 0px
+    linear-gradient(to top, #00333330, transparent 20%);
+  /* rotate: 35deg; */
 }
 
 .reflectionSemiCircle {
-   -webkit-box-reflect: below -70px linear-gradient(to top, #62e99843, transparent
-            40%);
+  -webkit-box-reflect: below -70px linear-gradient(to top, #62e99843, transparent
+        40%);
+}
+#Registers {
+  color: #fff !important;
+  /* font-family: Philosopher, sans-serif; */
+  /* background: #000; */
+  background-color: #1fb141;
+  position: fixed;
+  z-index: 999999;
+  top: 50%;
+  transform: rotate(90deg);
+  /* left: -4em; */
+  /* border: 2px solid #9d7200 !important; */
+  box-shadow: 1px 1px 11px;
+  border-radius: 8px !important;
+  width: fit-content;
+  height: 40px;
+  text-align: center;
+  padding: 8px 8px;
+  float: right;
+  right: -70px;
 }
