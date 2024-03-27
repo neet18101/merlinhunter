@@ -14,7 +14,6 @@ import pageTitle from "@/common/utils/page-title";
 import { getAllPosts } from "@/common/apis/post.api";
 import NewTimeLine from "@/components/home/NewTimeline";
 import { CallIcon, CallIconNewCase } from "@/components/icons";
-import whatsupImage from '../public/assets/images/whatsup.png';
 
 export const metadata: Metadata = pageTitle.home;
 
@@ -28,7 +27,7 @@ const HomePage = async () => {
          {/* <HomeBanner /> */}
          <div className="aPPointment">
             <a id="Registers" className="btn btn-lg  book-ap flex gap-1" href="https://wa.me/+447748464899">
-               <img src={'/assets/images/whatsup.png'}  alt="" style={{width:'25px'}} />
+               <img src={'/assets/images/whatsup.png'} alt="" style={{ width: '25px' }} />
                <span>How Can I help you ?</span>
             </a>
          </div>
