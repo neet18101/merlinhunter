@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import { useMediaQuery } from "usehooks-ts";
+import { useState } from "react";
 
 type Props = {
    item: TServiceRepository;
@@ -14,6 +15,16 @@ type Props = {
 
 const CardPanel = ({ item, className, type }: Props) => {
    const matches = useMediaQuery("(min-width: 768px)");
+   const [callText, setCallText] = useState<string>("Call Now");
+   const changeCallText = () => {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+         setCallText("Call Now");
+      } else {
+
+         setCallText("+44 020 3340 6070");
+      }
+   };
 
    return (
       <div
@@ -81,24 +92,16 @@ const CardPanel = ({ item, className, type }: Props) => {
                      </span>
                   </div>
                </Link>
-               <Link
-                  href="tel:+44 020 3340 6070"
-                  className={clsx(
-                     "border  rounded-full px-[5px] py-[6px] flex items-center justify-center gap-[5px] cursor-[url(/assets/images/greenCircle.svg),_pointer] min-w-fit ",
-                     {
-                        " bg-white hover:bg-transparent md:border-white hover:text-white hover:stroke-white greenlink":
-                           type === "primaryCard" || type === "secondoryCard",
-                        "hover:bg-teal-600 border-teal-600 hover:border-white text-teal-950 hover:text-white  stroke-teal-600 hover:stroke-white":
-                           type === "realCard",
-                        "text-teal-600 stroke-teal-600 border-teal-600":
-                           type === "primaryCard",
-                        "text-orange-600 stroke-orange-600":
-                           type === "secondoryCard",
-                     }
-                  )}
-               >
-                  <CallIcon /> Call Now
-               </Link>
+               <div className="lg:block hidden">
+                  <a
+                     href="tel:+44 020 3340 6070"
+                     className="border border-orange-600 hover:bg-orange-600 rounded-full px-[20px] text-orange-600 hover:text-white py-[8px] flex items-center justify-center gap-[5px] cursor-[url(/assets/images/greenCircle.svg),_pointer] orangelink stroke-orange-600 hover:stroke-white"
+                     onClick={changeCallText}
+                  >
+                     <CallIcon />
+                     <i>{callText}</i>
+                  </a>
+               </div>
             </div>
          </div>
 

@@ -110,7 +110,7 @@ const Card = ({ children, className }: IProps) => {
          </div>
          <div className="grid grid-cols-2 mt-8">
             <Link
-               href="mailto:rami@merlinhunter.com"
+               href="mailto:charles@merlinhunter.com"
                className={twMerge(
                   clsx(
                      "text-[14px] m-auto px-5 font-lato greenlink border border-teal-600  bg-teal-600 hover:bg-white text-white hover:text-teal-600  py-[6px] rounded-full  min-w-fit "

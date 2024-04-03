@@ -14,7 +14,7 @@ const Desktop = ({ navlinks }: { navlinks: TNavlink[] }) => {
       if (isMobile) {
          setCallText("Call Now");
       } else {
-        
+
          setCallText("+44 020 3340 6070");
       }
    };
