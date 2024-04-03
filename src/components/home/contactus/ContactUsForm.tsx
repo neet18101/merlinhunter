@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 
 const ContactUsForm = () => {
    const router = useRouter();
@@ -17,6 +19,7 @@ const ContactUsForm = () => {
       firstName: "",
       lastName: "",
       email: "",
+      country_code: "",
       phone: "",
       alternatePhone: "",
       question: [] as string[],
@@ -31,6 +34,9 @@ const ContactUsForm = () => {
       }
       setFormData({ ...formData, question: updatedQuestions });
    };
+   const handlePhoneChange = (value: string) => {
+      setFormData({ ...formData, phone: value });
+   };
    const handleSubmit = async (e: any) => {
       e.preventDefault();
       try {
@@ -41,6 +47,7 @@ const ContactUsForm = () => {
             firstName: "",
             lastName: "",
             email: "",
+            country_code: "",
             phone: "",
             alternatePhone: "",
             question: [] as string[],
@@ -53,7 +60,7 @@ const ContactUsForm = () => {
          console.log(error);
       }
    };
-   return ( 
+   return (
       <div className="flex flex-col gap-[40px]  ">
          <form className="grid gap-[20px]" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-[10px]">
@@ -82,7 +89,18 @@ const ContactUsForm = () => {
                   placeholder="Last Name"
                   className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                /> */}
-               <input
+               <PhoneInput
+                  international
+                  countryCallingCodeEditable={false}
+                  defaultCountry="US"
+                  placeholder="Phone"
+                  value={formData.phone}
+                  onChange={handlePhoneChange}
+                  className="bg-transparent   w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px] outline-none  "
+
+               />
+
+               {/* <input
                   id="phone"
                   type="tel"
                   value={formData.phone}
@@ -92,8 +110,8 @@ const ContactUsForm = () => {
                   }
                   placeholder="Phone"
                   name="phone"
-                  className="bg-transparent   w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
-               />
+                  className="bg-transparent   w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px] "
+               /> */}
                <input
                   id="email"
                   type="email"

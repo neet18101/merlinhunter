@@ -91,8 +91,8 @@ const contactDetails = [
    {
       icon: <MailIconNewCase />,
       title: "E-mail Address",
-      textOne: " charles@merlinhunter.com",
-      href: "mailto:charles@merlinhunter.com",
+      textOne: " rami@merlinhunter.com",
+      href: "mailto:rami@merlinhunter.com",
    },
    {
       icon: <CallIconNewCase />,

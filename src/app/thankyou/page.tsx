@@ -6,20 +6,20 @@ import Link from 'next/link';
 
 function page() {
   return (
-    <> 
-    <Script
-      id="google-conversion-tracking"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: `
+    <>
+      <Script
+        id="google-conversion-tracking"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'AW-16473264291');
         gtag('event', 'conversion', {'send_to': 'AW-16473264291/kFAICNf5650ZEKOhiK89'});
       `,
-      }}
-    />
+        }}
+      />
       <Script
         id="google-analytics"
         src="https://www.googletagmanager.com/gtag/js?id=AW-16473264291"
