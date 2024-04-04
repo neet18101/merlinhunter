@@ -76,7 +76,7 @@ const ContactUsForm = () => {
                   }
                   placeholder="Full Name"
                   required
-                  className="bg-transparent  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
+                  className="bg-transparent col-span-2  w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px]  "
                />
                {/* <input
                   id="lastName"
@@ -96,7 +96,7 @@ const ContactUsForm = () => {
                   placeholder="Phone"
                   value={formData.phone}
                   onChange={handlePhoneChange}
-                  className="bg-transparent   w-full border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px] outline-none  "
+                  className="bg-transparent   w-full col-span-2 border-b border-neutral-500 text-neutral-550 outline-none pt-[10px] py-[13px] px-[10px] outline-none  "
 
                />
 
