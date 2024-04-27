@@ -62,13 +62,13 @@ const ContactUsForm = () => {
          const emailResponse = await emailjs.sendForm(serviceId, templateId, form.current!, {
             publicKey: publicKey,
          });
-         console.log('Email sent successfully!', emailResponse);
+         // console.log('Email sent successfully!', emailResponse);
 
 
 
-         // if (response.status === 200 || emailResponse.status === 200) {
-         //    router.push("/thankyou")
-         // }
+         if (response.status === 200 || emailResponse.status === 200) {
+            router.push("/thankyou")
+         }
       } catch (error) {
          console.log(error);
       }
