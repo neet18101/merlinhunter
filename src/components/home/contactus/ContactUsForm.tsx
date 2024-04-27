@@ -4,16 +4,18 @@ import { client } from "@/common/utils/sanity";
 import { SendIcon } from "@/components/icons";
 import { Checkbox } from "@/components/inputs";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import emailjs from '@emailjs/browser';
 
 const ContactUsForm = () => {
    const router = useRouter();
    const [isChecked, setIsChecked] = useState<boolean>(false);
    const [isLoading, setIsLoading] = useState(false); // Step 2
+   const form = useRef<HTMLFormElement>(null);
 
    const [formData, setFormData] = useState({
       firstName: "",
@@ -41,7 +43,7 @@ const ContactUsForm = () => {
       e.preventDefault();
       try {
          const response = await axios.post("/api/contactus", formData);
-         console.log(response.status);
+         // console.log(response.status);
          setIsLoading(false);
          setFormData({
             firstName: "",
@@ -53,16 +55,28 @@ const ContactUsForm = () => {
             question: [] as string[],
             message: "",
          });
-         if (response.status === 200) {
-            router.push("/thankyou")
-         }
+         const serviceId = "service_3s4jwuc";
+         const templateId = "template_g9jh0mx";
+         const publicKey = "oXZr_5k5eBTMvJttl"
+
+         const emailResponse = await emailjs.sendForm(serviceId, templateId, form.current, {
+            publicKey: publicKey,
+         });
+         console.log('Email sent successfully!', emailResponse);
+
+
+
+         // if (response.status === 200 || emailResponse.status === 200) {
+         //    router.push("/thankyou")
+         // }
       } catch (error) {
          console.log(error);
       }
+
    };
    return (
       <div className="flex flex-col gap-[40px]  ">
-         <form className="grid gap-[20px]" onSubmit={handleSubmit}>
+         <form ref={form} className="grid gap-[20px]" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-[10px]">
                <div className="absolute grid w-5 h-5 place-items-center text-blue-gray-500 top-2/4 right-3 -translate-y-2/4">
                   <i className="fas fa-heart" aria-hidden="true" />
@@ -70,6 +84,7 @@ const ContactUsForm = () => {
                <input
                   id="firstName"
                   type="text"
+                  name="firstName"
                   value={formData.firstName}
                   onChange={(e) =>
                      setFormData({ ...formData, firstName: e.target.value })
@@ -92,6 +107,7 @@ const ContactUsForm = () => {
                <PhoneInput
                   international
                   countryCallingCodeEditable={false}
+                  name="phone"
                   defaultCountry="US"
                   placeholder="Phone"
                   value={formData.phone}
