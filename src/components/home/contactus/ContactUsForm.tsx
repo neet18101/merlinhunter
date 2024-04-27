@@ -59,7 +59,7 @@ const ContactUsForm = () => {
          const templateId = "template_g9jh0mx";
          const publicKey = "oXZr_5k5eBTMvJttl"
 
-         const emailResponse = await emailjs.sendForm(serviceId, templateId, form.current, {
+         const emailResponse = await emailjs.sendForm(serviceId, templateId, form.current!, {
             publicKey: publicKey,
          });
          console.log('Email sent successfully!', emailResponse);
