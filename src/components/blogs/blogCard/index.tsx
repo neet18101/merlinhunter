@@ -36,9 +36,9 @@ export const BlogCard = ({ post, dataAos, dataAosDelay, minDescriptionLength = 1
          <h3 className=" text-zinc-850 text-wrap  justify-start  font-roboto text-[30px] font-bold leading-normal">
             {post.title}
          </h3>
-         <p className="py-[10px] text-[14px] justify-items-start not-italic font-lato leading-normal text-stone-700">
+         {/* <p className="py-[10px] text-[14px] justify-items-start not-italic font-lato leading-normal text-stone-700">
             {truncateDescription(post.description)}
-         </p>
+         </p> */}
 
          <div className="flex">
             <p className="text-[14px] justify-start text-gray-400 font-lato ">
