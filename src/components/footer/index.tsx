@@ -48,13 +48,13 @@ const Footer = () => {
                 </p>
               </div>
               <div className="space-y-[10px]">
-                <p>
+                {/* <p>
                   <span className="font-semibold text-white">
                     {" "}
                     Registration reference: {" "}
                   </span>
                   ZB594863
-                </p>
+                </p> */}
                 <p>
                   <span className="font-semibold text-white">
                     Date registered: {" "}

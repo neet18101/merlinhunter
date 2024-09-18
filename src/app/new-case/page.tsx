@@ -18,11 +18,11 @@ const NewCasePage = () => {
 
       {/* Page Content */}
       <div className="max-w-[1440px] mx-auto">
-        <div className="px-4 py-6 md:px-[50px] lg:px-[100px] md:pt-[60px] md:pb-[80px] ">
+        {/* <div className="px-4 py-6 md:px-[50px] lg:px-[100px] md:pt-[60px] md:pb-[80px] ">
           <p className="animate__fadeInUp animate__animated animate__delay-500ms">
             Fill out some info and we will be in touch shortly! We can't wait to hear from you!
           </p>
-        </div>
+        </div> */}
 
         {/* New Case Form */}
         <NewCaseForm />

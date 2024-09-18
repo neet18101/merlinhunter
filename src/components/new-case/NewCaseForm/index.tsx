@@ -60,7 +60,7 @@ const NewCaseForm = () => {
    return (
       <div className="animate__fadeInUp animate__animated animate__delay-500ms">
          {/* form */}
-       <ContactUs/>
+       <ContactUs newCaseForm={true}/>
       </div>
    );
 };

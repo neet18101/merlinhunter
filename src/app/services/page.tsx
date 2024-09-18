@@ -154,11 +154,7 @@ const digitalServices: ServiceItem[] = [
             para: "A false allegation investigation is the process of gathering evidence to determine whether an allegation is false. This can be a complex and challenging process, as it often involves conflicting testimony and limited evidence. False allegations can be made for a variety of reasons, such as retaliation, revenge, or personal gain.",
          },
 
-         {
-            title: "Revenge Porn Investigation",
-            _id: "Revenge Porn Investigation",
-            para: "Revenge porn is the act of sharing explicit images or videos of someone without their consent, often with the intent to humiliate or embarrass them. It is a serious crime that can have a devastating impact on the victim.",
-         },
+        
       ],
    },
 ];
@@ -168,41 +164,41 @@ const investigationsServices: ServiceItem[] = [
       _id: "2",
       title: "Investigations Services",
       list_one: [
-         {
-            title: "Infidelity Investigation",
-            _id: "Infidelity Investigation",
-            para: "Infidelity investigation is the process of gathering evidence to prove that a person is cheating on their partner. It can be conducted by a private investigator, or by the person themselves if they have the time and resources.",
-         },
+         // {
+         //    title: "Infidelity Investigation",
+         //    _id: "Infidelity Investigation",
+         //    para: "Infidelity investigation is the process of gathering evidence to prove that a person is cheating on their partner. It can be conducted by a private investigator, or by the person themselves if they have the time and resources.",
+         // },
 
-         {
-            title: "Financial Investigation",
-            _id: "Financial Investigation",
-            para: "An embezzlement investigation is the process of gathering evidence to determine whether an individual has embezzled funds or assets from an organisation. Embezzlement is a type of white-collar crime that involves the fraudulent misappropriation of property or entrusted funds. ",
-         },
+         // {
+         //    title: "Financial Investigation",
+         //    _id: "Financial Investigation",
+         //    para: "An embezzlement investigation is the process of gathering evidence to determine whether an individual has embezzled funds or assets from an organisation. Embezzlement is a type of white-collar crime that involves the fraudulent misappropriation of property or entrusted funds. ",
+         // },
 
-         {
-            title: "Cyberstalking Investigation",
-            _id: "Cyberstalking Investigation",
-            para: "Cyber stalking can have a devastating impact on victims, causing them emotional distress, fear, and anxiety. It can also damage their reputation and make it difficult for them to live their lives normally.",
-         },
+         // {
+         //    title: "Cyberstalking Investigation",
+         //    _id: "Cyberstalking Investigation",
+         //    para: "Cyber stalking can have a devastating impact on victims, causing them emotional distress, fear, and anxiety. It can also damage their reputation and make it difficult for them to live their lives normally.",
+         // },
 
-         {
-            title: "Stolen Vehicle Investigation",
-            _id: "Stolen Vehicle Investigation",
-            para: "The goal in a stolen vehicle investigation is to locate and recover the vehicle and identify and apprehend the perpetrators.",
-         },
+         // {
+         //    title: "Stolen Vehicle Investigation",
+         //    _id: "Stolen Vehicle Investigation",
+         //    para: "The goal in a stolen vehicle investigation is to locate and recover the vehicle and identify and apprehend the perpetrators.",
+         // },
 
-         {
-            title: "Catfish Investigation",
-            _id: "Catfish Investigation",
-            para: "A catfish investigation is a type of investigation that aims to identify and expose individuals who are using the internet to create fake online personas.",
-         },
+         // {
+         //    title: "Catfish Investigation",
+         //    _id: "Catfish Investigation",
+         //    para: "A catfish investigation is a type of investigation that aims to identify and expose individuals who are using the internet to create fake online personas.",
+         // },
 
-         {
-            title: "Child Custody Investigation",
-            _id: "Child Custody Investigation",
-            para: "A child custody investigation is a type of investigation that aims to gather information about the ability of a parent or other adult to provide a child with safe, adequate, and appropriate care.",
-         },
+         // {
+         //    title: "Child Custody Investigation",
+         //    _id: "Child Custody Investigation",
+         //    para: "A child custody investigation is a type of investigation that aims to gather information about the ability of a parent or other adult to provide a child with safe, adequate, and appropriate care.",
+         // },
       ],
    },
 ];
