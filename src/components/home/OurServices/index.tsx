@@ -5,8 +5,8 @@ import { useState, useEffect, Fragment } from "react";
 
 const services: TServiceRepository[] = [
    {
-      _id: "Address trace",
-      title: "Address trace",
+      _id: "Address Trace",
+      title: "Address Trace",
       description:
          "An address trace investigation is a type of investigation that aims to locate the current address of an individual or entity. This can be done for a variety of reasons, such as to serve legal documents, to collect a debt, or to find a missing person. There are a number of ways to conduct an address trace investigation. Some common methods include:",
       icon: "1",
@@ -129,7 +129,7 @@ const servicesTablet: TServiceRepository[] = [
 
 const servicesMobile: TServiceRepository[] = [
    {
-      _id: "Address trace",
+      _id: "Address Trace",
       title: "Address Trace",
       description:
          "An address trace investigation is a type of investigation that aims to locate the current address of an individual or entity. This can be done for a variety of reasons, such as to serve legal documents, to collect a debt, or to find a missing person. There are a number of ways to conduct an address trace investigation. Some common methods include:",
