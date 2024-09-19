@@ -44,7 +44,7 @@ const Desktop = ({ navlinks }: { navlinks: TNavlink[] }) => {
                   onClick={changeCallText}
                >
                   <CallIcon />
-                  <i>{callText}</i>
+                  <p>{callText}</p>
                </a>
             </div>
 

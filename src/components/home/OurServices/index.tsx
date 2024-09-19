@@ -64,7 +64,7 @@ const servicesTablet: TServiceRepository[] = [
       title: "Address trace",
       description:
          "An address trace investigation is a type of investigation that aims to locate the current address of an individual or entity. This can be done for a variety of reasons, such as to serve legal documents, to collect a debt, or to find a missing person. There are a number of ways to conduct an address trace investigation. Some common methods include:",
-      icon: "2",
+      icon: "1",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -77,7 +77,7 @@ const servicesTablet: TServiceRepository[] = [
       title: "Hidden Asset Searches",
       description:
          "A hidden asset search is an investigation conducted to uncover assets that an individual or company has intentionally concealed. These assets may be hidden for various reasons, such as to avoid paying taxes, debts, or child support, or to protect them from creditors or legal claims. Methods used in hidden asset searches:",
-      icon: "3",
+      icon: "2",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -90,7 +90,7 @@ const servicesTablet: TServiceRepository[] = [
       title: "Fact Finding Investigation",
       description:
          "A false allegation investigation is the process of gathering evidence to determine whether an allegation is false. This can be a complex and challenging process, as it often involves conflicting testimony and limited evidence. False allegations can be made for a variety of reasons, such as retaliation, revenge, or personal gain.",
-      icon: "4",
+      icon: "3",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -103,7 +103,7 @@ const servicesTablet: TServiceRepository[] = [
       title: "Background Checks",
       description:
          "A background check is a process that verifies an individual's personal and professional information. ",
-      icon: "6",
+      icon: "4",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -116,7 +116,7 @@ const servicesTablet: TServiceRepository[] = [
       title: "Social Media Investigation",
       description:
          "A social media investigation is a type of investigation that aims to gather information from social media platforms to support a legal case or other investigation. Social media platforms contain a wealth of information about individuals and organisations, including their personal information, interests, activities, and relationships",
-      icon: "7",
+      icon: "5",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -133,7 +133,7 @@ const servicesMobile: TServiceRepository[] = [
       title: "Address trace",
       description:
          "An address trace investigation is a type of investigation that aims to locate the current address of an individual or entity. This can be done for a variety of reasons, such as to serve legal documents, to collect a debt, or to find a missing person. There are a number of ways to conduct an address trace investigation. Some common methods include:",
-      icon: "12",
+      icon: "1",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -146,7 +146,7 @@ const servicesMobile: TServiceRepository[] = [
       title: "Hidden Asset Searches",
       description:
          "A hidden asset search is an investigation conducted to uncover assets that an individual or company has intentionally concealed. These assets may be hidden for various reasons, such as to avoid paying taxes, debts, or child support, or to protect them from creditors or legal claims. Methods used in hidden asset searches:",
-      icon: "11",
+      icon: "2",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -159,7 +159,7 @@ const servicesMobile: TServiceRepository[] = [
       title: "Fact Finding Investigation",
       description:
          "A false allegation investigation is the process of gathering evidence to determine whether an allegation is false. This can be a complex and challenging process, as it often involves conflicting testimony and limited evidence. False allegations can be made for a variety of reasons, such as retaliation, revenge, or personal gain.",
-      icon: "10",
+      icon: "3",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -173,7 +173,7 @@ const servicesMobile: TServiceRepository[] = [
       title: "Background Checks",
       description:
          "A background check is a process that verifies an individual's personal and professional information. ",
-      icon: "8",
+      icon: "4",
       url: {
          link: "/new-case",
          title: "New Case",
@@ -186,7 +186,7 @@ const servicesMobile: TServiceRepository[] = [
       title: "Social Media Investigation",
       description:
          "A social media investigation is a type of investigation that aims to gather information from social media platforms to support a legal case or other investigation. Social media platforms contain a wealth of information about individuals and organisations, including their personal information, interests, activities, and relationships",
-      icon: "7",
+      icon: "5",
       url: {
          link: "/new-case",
          title: "New Case",

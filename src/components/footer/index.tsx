@@ -48,25 +48,25 @@ const Footer = () => {
                 </p>
               </div>
               <div className="space-y-[10px]">
-                {/* <p>
+                <p>
                   <span className="font-semibold text-white">
                     {" "}
                     Registration reference: {" "}
                   </span>
                   ZB594863
-                </p> */}
+                </p>
                 <p>
                   <span className="font-semibold text-white">
                     Date registered: {" "}
                   </span>
                   11 September 2023
                 </p>
-                <p>
+                {/* <p>
                   <span className="font-semibold text-white">
                     Registration expires: {" "}
                   </span>
                   10 September 2024
-                </p>
+                </p> */}
                 <p>
                   <span className="font-semibold text-white">
                     Contact us: {" "}

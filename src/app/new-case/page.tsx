@@ -28,7 +28,7 @@ const NewCasePage = () => {
         <NewCaseForm />
 
         {/* Contact Details */}
-        <div className="px-4 md:px-[50px] lg:px-[100px] my-[40px] md:my-[80px]">
+        {/* <div className="px-4 md:px-[50px] lg:px-[100px] my-[40px] md:my-[80px]">
           <h2 className="text-[32px] md:text-[46px] font-bold mb-[30px] md:mb-[60px]" data-aos="fade-up">
             Contact Details
           </h2>
@@ -44,7 +44,7 @@ const NewCasePage = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
