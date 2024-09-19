@@ -23,7 +23,14 @@ const Desktop = ({ navlinks }: { navlinks: TNavlink[] }) => {
       <nav className="border-neutral-300 fixed w-full z-20 bg-white ">
          <div className="hidden md:flex justify-between  items-center px-4 py-[20px] md:px-[50px] lg:px-[100px] font-lato drop-shadow-sm sticky max-w-[1440px] mx-auto ">
             <Link href="/">
-               <Logo />
+               <Link href="/">
+                  <img src="/assets/images/Merlin_Hunter_logo.png" alt="logo" style={{
+                     height: '112px',
+                     width: '92px',
+                     objectFit: 'contain'
+                  }} />
+               </Link>
+               {/* <Logo /> */}
             </Link>
             <div className="md:block hidden ">
                <ul className="flex gap-[30px] text-[16px]  text-stone-700  w-full">

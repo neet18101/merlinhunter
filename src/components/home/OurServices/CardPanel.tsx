@@ -53,56 +53,19 @@ const CardPanel = ({ item, className, type }: Props) => {
                   ? `${item.description.substring(0, 100)}...`
                   : `${item.description.substring(0, 70)}...`}
             </p>
-            <div className="grid grid-cols-2   gap-[15px] md:gap-[5px] justify-between  w-full ">
-               <Link
-                  href="/new-case"
-                  className={twMerge(
-                     clsx(
-                        "text-[16px] font-lato greenlink border px-[5px] py-[6px] rounded-full  min-w-fit",
-                        {
-                           "border-teal-600  bg-teal-600 md:bg-transparent md:hover:bg-white md:border-white md:hover:border-teal-600 text-white":
-                              type === "primaryCard" ||
-                              type === "secondoryCard",
-                           "border-teal-600 bg-teal-600 hover:bg-white text-white hover:text-teal-600":
-                              type === "realCard",
-                           "text-white hover:text-teal-600":
-                              type === "primaryCard",
-                           "text-white hover:text-orange-600":
-                              type === "secondoryCard",
-                        }
-                     )
-                  )}
+
+
+            <div className="lg:block hidden">
+               <a
+                  href="tel:+44 020 3340 6070"
+                  className="border border-orange-600 hover:bg-orange-600 rounded-full px-[20px] text-orange-600 hover:text-white py-[8px] flex items-center justify-center gap-[5px] cursor-[url(/assets/images/greenCircle.svg),_pointer] orangelink stroke-orange-600 hover:stroke-white"
+                  onClick={changeCallText}
                >
-                  <div className="flex items-center justify-center">
-                     <span>New Case</span>
-                     <span className="mt-[3px]">
-                        {/* <ArrowDownRightIcon
-                           height={10}
-                           width={10}
-                           className={clsx("stroke-teal-950", {
-                              "stroke-white":
-                                 type === "primaryCard" ||
-                                 type === "secondoryCard",
-                           })}
-                        /> */}
-                        <Icon
-                           icon="basil:arrow-down-outline"
-                           className="rotate-[-135deg] text-[24px]"
-                        />
-                     </span>
-                  </div>
-               </Link>
-               <div className="lg:block hidden">
-                  <a
-                     href="tel:+44 020 3340 6070"
-                     className="border border-orange-600 hover:bg-orange-600 rounded-full px-[20px] text-orange-600 hover:text-white py-[8px] flex items-center justify-center gap-[5px] cursor-[url(/assets/images/greenCircle.svg),_pointer] orangelink stroke-orange-600 hover:stroke-white"
-                     onClick={changeCallText}
-                  >
-                     <CallIcon />
-                     <i>{callText}</i>
-                  </a>
-               </div>
+                  <CallIcon />
+                  <i>{callText}</i>
+               </a>
             </div>
+
          </div>
 
          <p className=" hidden  text-teal-950">Hello</p>

@@ -128,33 +128,75 @@ const digitalServices: ServiceItem[] = [
          {
             title: "Address Trace",
             _id: "Address Trace",
-            para: "An address trace investigation is a type of investigation that aims to locate the current address of an individual or entity. This can be done for a variety of reasons, such as to serve legal documents, to collect a debt, or to find a missing person. There are a number of ways to conduct an address trace investigation.",
+            para: `An address trace investigation is a type of investigation that aims to locate the current address of an individual or entity. This can be done for a variety of reasons, such as to serve legal documents, to collect a debt, or to find a missing person. There are a number of ways to conduct an address trace investigation. 
+
+Searching public records: This can include checking property records, motor vehicle records, and voter registration records.
+
+Searching databases: There are a number of commercial and government databases that can be used to search for addresses, such as Autotrace, LexisNexis and Orbis.
+
+Interviewing witnesses and associates: People who know the person or entity whose address is being traced may have information about their current whereabouts.
+
+Canvassing neighbourhoods: In some cases, we may need to canvass neighbourhoods to knock on doors and ask people if they have seen the person or entity being traced.`,
          },
 
          {
             title: "Background Check",
             _id: "Background Check",
-            para: "A background check is a process that verifies an individual's personal and professional information. ",
+            para: `A background check is a process that verifies an individual's personal and professional information. There are two main types of background checks:
+
+Consumer background checks: These checks are typically conducted by individuals or businesses to gather information about a person's background for personal reasons, such as when renting an apartment or hiring a babysitter.
+
+Employment background checks: These checks are conducted by employers to screen job applicants and existing employees. Employment background checks may include more sensitive information, such as criminal records and credit history.`,
          },
 
          {
             title: "Hidden Asset",
             _id: "Hidden Asset",
-            para: "A hidden asset search is an investigation conducted to uncover assets that an individual or company has intentionally concealed. These assets may be hidden for various reasons, such as to avoid paying taxes, debts, or child support, or to protect them from creditors or legal claims. Methods used in hidden asset searches:",
+            para:`A hidden asset search is an investigation conducted to uncover assets that an individual or company has intentionally concealed. These assets may be hidden for various reasons, such as to avoid paying taxes, debts, or child support, or to protect them from creditors or legal claims. Methods used in hidden asset searches:
+
+Review of public records: This includes searching property records, business registrations, tax records, vehicle records and court filings. 
+
+Professional licensing records: Identifying any professional licences held by the subject, can best indicate salary and market value.
+
+Financial analysis: This involves examining bank statements, credit card records, investment accounts, and other financial documents.
+
+Interviews with associates: Talking to friends, family members, business partners, or other individuals who may have knowledge of the person's assets.`,
          },
          {
             title: "Social Media Investigation",
             _id: "Social Media Investigation",
-            para: "A social media investigation is a type of investigation that aims to gather information from social media platforms to support a legal case or other investigation. Social media platforms contain a wealth of information about individuals and organisations, including their personal information, interests, activities, and relationships",
+            para: `A social media investigation is a type of investigation that aims to gather information from social media platforms to support a legal case or other investigation. Social media platforms contain a wealth of information about individuals and organisations, including their personal information, interests, activities, and relationships.
+
+This information can be used to identify witnesses, corroborate evidence, and uncover hidden connections. There are a number of different methods that can be used to conduct a social media investigation, including:
+
+Keyword searches: We can search for specific keywords on social media platforms to identify relevant posts and profiles.
+
+Geolocation searches: We can also search for posts that were made from a specific location. This can be useful for identifying witnesses to a crime or for tracking the movements of a suspect.
+
+Relationship mapping: We can use social media platforms to map out the relationships between different individuals and organisations. This can be useful for identifying potential accomplices or co-conspirators.
+
+Open source intelligence (OSINT): We can also use OSINT tools to gather information about individuals and organisations from social media platforms. OSINT tools can be used to identify hidden profiles, track down deleted posts, and uncover other hidden information.`,
          },
 
          {
             title: "Fact Finding Investigation",
             _id: "Fact Finding Investigation",
-            para: "A false allegation investigation is the process of gathering evidence to determine whether an allegation is false. This can be a complex and challenging process, as it often involves conflicting testimony and limited evidence. False allegations can be made for a variety of reasons, such as retaliation, revenge, or personal gain.",
+            para: `A false allegation investigation is the process of gathering evidence to determine whether an allegation is false. This can be a complex and challenging process, as it often involves conflicting testimony and limited evidence. False allegations can be made for a variety of reasons, such as retaliation, revenge, or personal gain.
+
+They can be very damaging to the person or organisation that is accused, and they can be difficult to clear. Here are some of the steps involved in a false allegation investigation:
+
+Identify the scope of the allegation. This includes determining the type of allegation that is being made, the date and time of the alleged incident, and the parties that are involved.
+
+Interview the complainant and the accused. This is an important step in gathering information about the allegation and in assessing the credibility of the parties involved.
+
+Review evidence. This may include witness statements, physical evidence, and electronic records and identify patterns and trends that may indicate whether the allegation is true or false.
+
+Draw conclusions. Based on the evidence gathered, the investigator will draw conclusions about whether the allegation is likely to be true or false.
+
+Report the findings. The investigator will typically prepare a report that summarises the findings of the investigation and recommends further action, such as disciplinary action against the accused or criminal prosecution of the complainant.`,
          },
 
-        
+
       ],
    },
 ];
