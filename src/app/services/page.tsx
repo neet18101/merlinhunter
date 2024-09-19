@@ -216,6 +216,7 @@ const ServicesPage = () => {
                   Services
                </span>
             </h1> */}
+            {/* testing  luciferl*/}
             <div className="grid md:grid-cols-2 gap-12">
                <div className="md:px-4 py-8 rounded-lg md:rounded-2xl">
                   {digitalServices.map((mainItems, index) => (
