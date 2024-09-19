@@ -42,7 +42,7 @@ const HomePage = async () => {
 
          <div className="bg-[#F6F6F6]">
             <Container>
-               <ContactUs />
+               <ContactUs newCaseForm={false} />
                <FromOurBlog posts={posts} />
             </Container>
             <Sponsors />
