@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="col-start-1 col-end-3 flex flex-col gap-[20px] md:gap-[40px] ">
             <Link href="/" className="greenlink">
               <Image
-                src={"/assets/images/brand_Logo.svg"}
+                src={"/assets/images/footer_logo.png"}
                 width={172}
                 height={140}
                 alt="Logo"

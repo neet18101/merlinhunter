@@ -93,7 +93,7 @@ const ServiceChip = ({
                }}
             >
                <div className="bg-white text-[#1A1A1A] font-lato  text-[13px] rounded-[8px] px-[30px] py-[10px] z-10">
-                  <p>{service?.para}</p>
+                  <p dangerouslySetInnerHTML={{ __html:service?.para }}></p>
                </div>
             </motion.div>
          )}

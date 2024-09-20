@@ -9,7 +9,7 @@ const Stats = () => {
             <p className="text-[62px] font-bold font-roboto text-center">
                <CountUp
                   duration={2.5}
-                  end={100}
+                  end={110}
                   useEasing={false}
                   enableScrollSpy={true}
                   scrollSpyOnce={false}
@@ -19,33 +19,34 @@ const Stats = () => {
                   data-aos="zoom-in"
                   data-aos-delay="2700"
                >
-                  %
+                  +
                </span>
             </p>
             <p className="text-[18px] font-lato text-md font-medium text-center ">
-               Success rate in hidden asset investigations finding new evidence
-               for fair settlement.
+               successful reunification of a long lost friend.
+
             </p>
          </div>
          <div className=" bg-white text-teal-600  w-full px-[15px] md:px-[25px] py-[20px] rounded-xl shadow-2xl">
             <p className="text-[62px]  font-bold font-roboto text-center  ">
                <CountUp
                   duration={4}
-                  end={149}
+                  end={250}
                   useEasing={false}
                   enableScrollSpy={true}
                   scrollSpyOnce={false}
                />
                <span
-                  className="text-[42px] text-white"
+                  className="text-[42px] text-teal-600"
                   data-aos="zoom-in"
                   data-aos-delay="2700"
                >
-                  %
+                  +
                </span>
             </p>
             <p className="font-lato text-md text-[18px] font-medium text-center ">
-               Missing people cases solved.
+               successful traces of adult children and long lost parents.
+
             </p>
          </div>
 
@@ -53,7 +54,7 @@ const Stats = () => {
             <p className="text-[62px]  font-bold font-roboto text-center ">
                <CountUp
                   duration={2.5}
-                  end={100}
+                  end={175}
                   useEasing={false}
                   enableScrollSpy={true}
                   scrollSpyOnce={false}
@@ -67,8 +68,7 @@ const Stats = () => {
                </span>
             </p>
             <p className="text-[18px] text-md font-medium font-lato text-center ">
-               Civil litigation and arbitration investigations completed across
-               the UK, US, Kenya and Eastern Europe.
+            successful traces of debtors and abscond tenants.
             </p>
          </div>
       </div>

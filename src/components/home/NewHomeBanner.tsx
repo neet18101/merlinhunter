@@ -30,7 +30,7 @@ const NewHomeBanner = () => {
                      WELCOME TO MERLIN HUNTER & ASSOCIATES
                   </span> */}
                   <h1 className="w-full md:max-w-[750px] mt-[10px] text-[2.4rem] md:text-[3.4rem] font-bold md:leading-[76px] mb-[20px] text-zinc-850 font-roboto animate__animated animate__bounceInLeft md:animate__bounce animate__animated ">
-                    Lost Someone?<br /> <span className="text-orange-600">We'll find them.</span>
+                    Lost someone?<br /> <span className="text-orange-600">We'll find them.</span>
                   </h1>
                   <p className="text-stone-500 w-full md:max-w-[750px] font-lato animate__animated  animate__bounceInRight animate__fast hidden md:block ">
                      Our team can tailor an investigation in confidence,
