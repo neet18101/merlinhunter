@@ -176,7 +176,7 @@ const Work = () => {
                      </div>
                   ))}
                </div>
-               <Notice />
+               {/* <Notice /> */}
             </div>
          </div>
       </div>
