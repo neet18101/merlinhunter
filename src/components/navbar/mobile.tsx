@@ -36,7 +36,13 @@ export default function Mobile({ navlinks }: Props) {
       >
          <NavbarContent className="md:hidden" justify="start">
             <NavbarBrand>
-               <Logo />
+               <Link href="/">
+                  <img src="/assets/images/Merlin_Hunter_logo.png" alt="logo" style={{
+                     height: '80px',
+                     width: '80px',
+                     objectFit: 'contain'
+                  }} />
+               </Link>
             </NavbarBrand>
          </NavbarContent>
 
