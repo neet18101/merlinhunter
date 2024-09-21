@@ -146,8 +146,8 @@ const digitalServices: ServiceItem[] = [
     <p>A background check is a process that verifies an individual's personal and professional information. There are two main types of background checks:</p>
 <p></p>
     <ul>
-        <li><strong>Consumer background checks:</strong> These checks are typically conducted by individuals or businesses to gather information about a person's background for personal reasons, such as when renting an apartment or hiring a babysitter.</li>
-        <li><strong>Employment background checks:</strong> These checks are conducted by employers to screen job applicants and existing employees. Employment background checks may include more sensitive information, such as criminal records and credit history.</li>
+        <li style="padding-top:10px"><strong>Consumer background checks:</strong> These checks are typically conducted by individuals or businesses to gather information about a person's background for personal reasons, such as when renting an apartment or hiring a babysitter.</li>
+        <li style="padding-top:10px"><strong>Employment background checks:</strong> These checks are conducted by employers to screen job applicants and existing employees. Employment background checks may include more sensitive information, such as criminal records and credit history.</li>
     </ul>`,
          },
 
