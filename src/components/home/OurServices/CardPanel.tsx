@@ -53,9 +53,7 @@ const CardPanel = ({ item, className, type }: Props) => {
                   ? `${item.description.substring(0, 100)}...`
                   : `${item.description.substring(0, 70)}...`}
             </p>
-
-
-            <div className="lg:block hidden">
+            {/* <div className="lg:block hidden">
                <a
                   href="tel:+44 020 3340 6070"
                   className="border border-orange-600 hover:bg-orange-600 rounded-full px-[20px] text-orange-600 hover:text-white py-[8px] flex items-center justify-center gap-[5px] cursor-[url(/assets/images/greenCircle.svg),_pointer] orangelink stroke-orange-600 hover:stroke-white"
@@ -64,7 +62,7 @@ const CardPanel = ({ item, className, type }: Props) => {
                   <CallIcon />
                   <i>{callText}</i>
                </a>
-            </div>
+            </div> */}
 
          </div>
 

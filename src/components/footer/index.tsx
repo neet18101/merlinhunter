@@ -9,6 +9,7 @@ import {
 } from "../icons";
 import LinkItem from "../atoms/LinkItem";
 import Link from "next/link";
+import Linkdin from "../icons/Linkdin";
 
 const Footer = () => {
   return (
@@ -243,8 +244,8 @@ const links = {
 };
 
 const socialLinks = [
-  { href: "http://facebook.com", icon: <FacebookIcon /> },
-  { href: "http://instagram.com", icon: <InstagramIcon /> },
-  { href: "http://twitter.com", icon: <TwitterIcon /> },
-  { href: "http://youtube.com", icon: <YoutubeIcon /> },
+  { href: "https://www.facebook.com/merlinhunterassociates", icon: <FacebookIcon /> },
+  { href: "https://www.instagram.com/merlinhunterassociates?igsh=bmNuN3kyb244aDEx&utm_source=qr", icon: <InstagramIcon /> },
+  { href: "https://www.linkedin.com/company/merlinhunter/", icon: <Linkdin /> },
+  // { href: "http://youtube.com", icon: <YoutubeIcon /> },
 ];
